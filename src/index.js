@@ -19,6 +19,7 @@ const defaultConfig = {
   successTypeGetter: action => `${action.type}_SUCCESS`,
   errorTypeGetter: action => `${action.type}_ERROR`,
 }
+
 export const createMiddleware = userConfig => store => next => (action) => {
   const { payload } = action
   const config = {
