@@ -12,8 +12,7 @@
     "test:watch": "jest --watch --coverage",
     "link": "./scripts/link.sh",
     "dist": "./scripts/dist.sh",
-    "copy-package": "cp package.json ./dist/package.json",
-    "prepublish": "npm run build"
+    "copy-package": "cp package.json ./dist/package.json"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -40,7 +39,9 @@
       "src/*.js"
     ]
   },
-  "dependencies": {},
+  "dependencies": {
+    "vapt": "^1.0.4"
+  },
   "author": "Rafael Ribeiro <rafael.correia.poli@gmail.com>",
   "repository": "git@github.com:thunder-js/vapt.git"
 }
