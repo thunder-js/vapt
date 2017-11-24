@@ -4,3 +4,7 @@
 
 A nice readme :)
 blah
+
+```
+yarn add vapt
+```
