@@ -1,6 +1,6 @@
 {
   "name": "vapt",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": "./dist/index.js",
   "license": "MIT",
   "scripts": {
@@ -12,7 +12,8 @@
     "test:watch": "jest --watch --coverage",
     "link": "./scripts/link.sh",
     "dist": "./scripts/dist.sh",
-    "copy-package": "cp package.json ./dist/package.json"
+    "copy-package": "cp package.json ./dist/package.json",
+    "prepublish": "npm run build"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
