@@ -11,3 +11,4 @@ deploy:
     tags: true
     repo: thunder-js/vapt
     branch: master
+  skip_cleanup: true
