@@ -23,7 +23,7 @@ export const middlewareCreator = userConfig => store => next => (action) => {
   const { payload } = action
   const config = {
     ...defaultConfig,
-    userConfig,
+    ...userConfig,
   }
 
   if (isPromise(payload)) {
