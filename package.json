@@ -1,7 +1,7 @@
 {
   "name": "vapt",
   "version": "1.0.1",
-  "main": "./index.js",
+  "main": "./dist/index.js",
   "license": "MIT",
   "scripts": {
     "prebuild": "rimraf dist",
@@ -30,6 +30,7 @@
     "flow-bin": "^0.54.1",
     "jest-cli": "^21.1.0",
     "nodemon": "^1.12.0",
+    "redux": "^3.7.2",
     "rimraf": "^2.6.2"
   },
   "jest": {
@@ -38,8 +39,7 @@
       "src/*.js"
     ]
   },
-  "dependencies": {
-    "redux": "^3.7.2"
-  },
-  "author": "Rafael Ribeiro <rafael.correia.poli@gmail.com>"
+  "dependencies": {},
+  "author": "Rafael Ribeiro <rafael.correia.poli@gmail.com>",
+  "repository": "git@github.com:thunder-js/vapt.git"
 }

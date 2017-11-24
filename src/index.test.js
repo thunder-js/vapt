@@ -1,5 +1,5 @@
 import { createStore, applyMiddleware } from 'redux'
-import { middlewareCreator } from './index'
+import { createMiddleware } from './index'
 
 const rootReducer = (state = {}, action) => {
   switch (action.type) {
@@ -52,7 +52,7 @@ const config = {
 }
 describe('middleware', () => {
   it('works for resolving promises', async () => {
-    const store = createStore(rootReducer, applyMiddleware(middlewareCreator(config)))
+    const store = createStore(rootReducer, applyMiddleware(createMiddleware(config)))
     store.dispatch(fetch())
       .then((data) => {
         expect(data).toEqual('rafael')
@@ -70,7 +70,7 @@ describe('middleware', () => {
   })
 
   it('works for failing promises', async () => {
-    const store = createStore(rootReducer, applyMiddleware(middlewareCreator(config)))
+    const store = createStore(rootReducer, applyMiddleware(createMiddleware(config)))
     store.dispatch(fetchError())
       .then(() => {
         // if this code gets executed, something is wrong :(
