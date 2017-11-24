@@ -9,3 +9,4 @@ deploy:
   on:
     tags: true
     repo: thunder-js/vapt
+    branch: master
